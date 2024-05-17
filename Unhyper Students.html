@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Project Details</title>
+<link href="Eva Wilimzig Website.css" rel="stylesheet" type="text/css">
+</head>
+
+<body
+  class="abschnitte">
+
+<div class="menu-bar">
+    <div class="logo">
+        <img src="Images/Homepage/EW logo.png" alt="Logo">
+    </div>
+    <div class="menu-items">
+        <a href="Homepage.html">Home</a>
+        <a href="About me.html">About me</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Shop.html">Shop</a>
+    </div>
+</div>
+<h1 class="title3" >Unhyper, students!</h1>
+	
+<p class="subheadline" >You've been so busy, hyper student...</p>
+	
+<div> <img src="Images/The Hyper Student/Mochup incom.jpg" alt="header image" class="headerimage">
+	</div>
+	
+<div class="Details"> 
+	<p>
+	 For the student body of my school I designed a series of Leporellos intending to help Hyper Students / workaholics take a moment to apprechiate their work and relax. It is covered in illustrations of our campus, text I wrote myself and quotes that fit. They are also designed to be postcards, that can be torn out.
+	</p>
+</div> 
+	
+<div> <img src="Images/The Hyper Student/Leporello 2.png" alt="header image" class="headerimage">
+	</div>
+	
+<div> <img src="Images/The Hyper Student/Leporello 3.png" alt="header image" class="headerimage">
+	</div>
+	
+<div> <img src="Images/The Hyper Student/Leporello 4.png" alt="header image" class="headerimage">
+	</div>
+	
+<div> <p class="Details">
+	</p> </div>
+	
+<div class="gallery">
+  <div class="row">
+    <div class="item">
+	  <img src="Images/The Hyper Student/casino.jpg" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+    </div>
+	<div class="item">
+	  <img src="Images/The Hyper Student/Flur.jpg" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+       </div>
+    </div>
+	<div class="item">
+	  <img src="Images/The Hyper Student/Keller.JPG" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+    </div>
+	<div class="row">
+    <div class="item">
+	  <img src="Images/The Hyper Student/Hof.JPG" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+    </div>
+	<div class="item">
+	  <img src="Images/The Hyper Student/Treppe_2_2.jpg" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+       </div>
+    </div>
+	<div class="item">
+	  <img src="Images/The Hyper Student/Tisch.jpg" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+    </div>
+	<div class="row">
+    <div class="item">
+	  <img src="Images/The Hyper Student/studio.jpg" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+    </div>
+	<div class="item">
+	  <img src="Images/The Hyper Student/tassen.jpg" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+       </div>
+    </div>
+	<div class="item">
+	  <img src="Images/The Hyper Student/Treppe 1.jpg" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+    </div>
+	<div class="row">
+    <div class="item">
+	  <img src="Images/The Hyper Student/pavillon.jpg" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+    </div>
+	<div class="item">
+	  <img src="Images/The Hyper Student/Flur 2.jpg" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+       </div>
+    </div>
+</div>
+	
+<script>
+function anzeigenVorschau(bild) {
+    var modal = document.createElement('div');
+    modal.classList.add('modal');
+
+    var modalInhalt = document.createElement('img');
+    modalInhalt.src = bild.src;
+    modalInhalt.alt = bild.alt;
+
+    modal.appendChild(modalInhalt);
+    document.body.appendChild(modal);
+
+    modal.addEventListener('click', function() {
+        modal.remove();
+    });
+}
+</script>
+	
+<h1 class="title2"> </h1>
+	
+</body>
+	
+<footer class="impressum">
+        <div class="container">
+            <div class="contact-info">
+                <p>Name: Eva Wilimzig | Email: emwilimzig@gmail.com | Instagram: @eva.working | <a href="copyright.html">&copy; 2024</a></p>
+            </div>
+        </div>
+    </footer>
+	
+</html>

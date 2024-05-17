@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Project Details</title>
+<link href="Eva Wilimzig Website.css" rel="stylesheet" type="text/css">
+</head>
+
+<body
+  class="abschnitte">
+
+<div class="menu-bar">
+    <div class="logo">
+        <img src="Images/Homepage/EW logo.png" alt="Logo">
+    </div>
+    <div class="menu-items">
+        <a href="Homepage.html">Home</a>
+        <a href="About me.html">About me</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Shop.html">Shop</a>
+    </div>
+</div>
+<h1 class="title3" >If Sharks were Men</h1>
+	
+<p class="subheadline" >“If Sharks wer Men” is my first ever picture book and it's based on a text by Bertolt Brecht.</p>
+	
+<div> <img src="Images/If Skarks were Men/Mockup Shark Zine.jpg" alt="header image" class="headerimage">
+	</div>
+	
+<div class="Details"> 
+	<p>
+	 This picture book was created in the class “Experimentelle Strategien im Grafikdesign” by Sven Völker at the FHP and works with a text by Bertolt Brecht criticising society.
+	</p>
+</div> 
+	
+<div> <img src="Images/If Skarks were Men/Bilderbuch_Eva_Wilimzig2.png" alt="header image" class="headerimage">
+	</div>
+	
+<div class="gallery">
+  <div class="row">
+    <div class="item">
+      <img src="Images/If Skarks were Men/Bilderbuch_Eva_Wilimzig2.jpg" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+    </div>
+    <div class="item">
+      <img src="Images/If Skarks were Men/Bilderbuch_Eva_Wilimzig3.jpg" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+    </div>
+    <div class="item">
+      <img src="Images/If Skarks were Men/Bilderbuch_Eva_Wilimzig4.jpg" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+    </div>
+  </div>
+  <div class="row">
+    <div class="item">
+      <img src="Images/If Skarks were Men/Bilderbuch_Eva_Wilimzig5.jpg" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+    </div>
+    <div class="item">
+      <img src="Images/If Skarks were Men/Bilderbuch_Eva_Wilimzig6.jpg" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+    </div>
+    <div class="item">
+      <img src="Images/If Skarks were Men/Bilderbuch_Eva_Wilimzig7.jpg" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+    </div>
+  </div>
+  <div class="row">
+    <div class="item">
+	  <img src="Images/If Skarks were Men/Bilderbuch_Eva_Wilimzig8.jpg" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+    </div>
+  </div>
+</div>
+	
+<script>
+function anzeigenVorschau(bild) {
+    var modal = document.createElement('div');
+    modal.classList.add('modal');
+
+    var modalInhalt = document.createElement('img');
+    modalInhalt.src = bild.src;
+    modalInhalt.alt = bild.alt;
+
+    modal.appendChild(modalInhalt);
+    document.body.appendChild(modal);
+
+    modal.addEventListener('click', function() {
+        modal.remove();
+    });
+}
+</script>
+	
+<h1 class="title2"> </h1>
+	
+</body>
+	
+<footer class="impressum">
+        <div class="container">
+            <div class="contact-info">
+                <p>Name: Eva Wilimzig | Email: emwilimzig@gmail.com | Instagram: @eva.working | <a href="copyright.html">&copy; 2024</a></p>
+            </div>
+        </div>
+    </footer>
+	
+</html>

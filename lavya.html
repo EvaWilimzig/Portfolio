@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lavya</title>
+<link href="Eva Wilimzig Website.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body
+  class="abschnitte">
+	
+<div class="menu-bar">
+    <div class="logo">
+        <img src="Images/Homepage/EW Logo.png" alt="Logo">
+    </div>
+    <div class="menu-items">
+        <a href="Homepage.html">Home</a>
+        <a href="About me.html">About me</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Shop.html">Shop</a>
+    </div>
+</div>
+	
+<h1 class="title3" >Lavya</h1>
+	
+<p class="subheadline" >Lavya is a variable font I developed in a class by Lucas de Groot at the FHP. Test ist out here.</p>
+	
+<div class="gallery">
+  <div class="row">
+    <div class="item">
+      <img src="Images/Lavya/Lavya Wow.gif" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+    </div>
+    <div class="item">
+      <img src="Images/Lavya/lavya 3d.jpg" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+    </div>
+    <div class="item">
+      <img src="Images/Lavya/abc.gif" alt="Project 1" class="vorschau-bild" onclick="anzeigenVorschau(this)">
+    </div>
+  </div>
+</div>
+	
+<!-- the variable font test -->
+<div class="container2">
+    <input type="text" id="textInput" placeholder="Enter text here">
+    <div class="controls">
+      <label for="weightRange">Weight:</label>
+      <input type="range" id="weightRange" min="0" max="150" step="10" value="0">
+      <label for="italicRange">Italic:</label>
+      <input type="range" id="italicRange" min="0" max="12" step="1" value="0">
+    </div>
+    <div class="preview2" id="previewText">Preview Text</div>
+  </div>
+	
+<div> <img src="Images/Lavya/Portfolio2.png" alt="header image" class="headerimage">
+	</div>
+	
+<h1 class="title2"> </h1>
+	
+ <script>
+    const textInput = document.getElementById('textInput');
+    const weightRange = document.getElementById('weightRange');
+    const italicRange = document.getElementById('italicRange');
+    const previewText = document.getElementById('previewText');
+
+    // Update preview text
+    function updatePreview() {
+      const text = textInput.value;
+      const weight = weightRange.value;
+      const italic = italicRange.value;
+
+      // Apply font styles
+      const fontWeight = weight;
+      const italicization = italic; // Mapping range 0-12 to 0-100
+      previewText.style.fontVariationSettings = `"wdth" ${fontWeight}, "ital" ${italicization}`;
+
+      // Set preview text
+      previewText.textContent = text;
+    }
+
+    // Event listeners for input changes
+    textInput.addEventListener('input', updatePreview);
+    weightRange.addEventListener('input', updatePreview);
+    italicRange.addEventListener('input', updatePreview);
+
+    // Initial update
+	 updatePreview();
+ </script>
+	
+</body>
+	
+<footer class="impressum">
+        <div class="container">
+            <div class="contact-info">
+                <p>Name: Eva Wilimzig | Email: emwilimzig@gmail.com | Instagram: @eva.working | <a href="copyright.html">&copy; 2024</a></p>
+            </div>
+        </div>
+    </footer>
+	
+</html>
