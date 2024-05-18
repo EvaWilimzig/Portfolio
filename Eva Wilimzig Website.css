@@ -341,6 +341,11 @@ a {
   .Details, .headerimage {
     width: 95%;
   }
+	
+	.title1 {
+	font-size: 12vw;
+	}
+	
   .subheadline {
 	margin-left: 2%;
 	margin-right: 2%;
