@@ -323,7 +323,7 @@ a {
 }
 
 /* mobile screen rules */ 
-@media screen and (max-width: 767px) {
+@media only screen and (min-width : 285px) and (max-width: 767px) {
   .Details, .headerimage {
     width: 95%;
   }
