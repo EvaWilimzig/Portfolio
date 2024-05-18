@@ -1,12 +1,23 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+/* Define the light font */
+@font-face {
+    font-family: 'LavyaVF';
+    src: url('Images//fonts/LavyaVF.woff2') format('woff2');
+    font-weight: 200 700;
+    font-style: normal;
+	font-stretch: 75% 125%;
+}
+
 .abschnitte {
 	color: rgba(240,83,78,1);
-	font-family: "Lavya";
+	font-family: "LavyaVF";
 	font-size: 1.5rem;
 	background-color: rgba(148,217,248,1.00);
 	display: grid;
+	font-variation-settings: 'wght' 400, 'wdth' 80;
 }
 
 .menu-bar {
@@ -22,7 +33,7 @@
     align-items: center;
     padding: 1% 1%;
 	white-space: nowrap;
-	font-family: "Lavya light";
+	font-variation-settings: 'wght' 200, 'wdth' 60;
 }
 
 .logo img {
@@ -49,7 +60,7 @@
 }
 
 .title1 {
-	font-family: "lavya bold";
+	font-variation-settings: 'wght' 700, 'wdth' 150;
     font-size: 8vw;
 	color: rgba(240,83,78,1.00);
     padding-top: 250px;
@@ -65,7 +76,7 @@
 }
 
 .title2 {
-	font-family: "lavya bold";
+	font-variation-settings: 'wght' 700, 'wdth' 150;
     font-size: 8vw;
 	color: rgba(240,83,78,1.00);
     padding-top: 0%;
@@ -76,7 +87,8 @@
 }
 
 .title3 {
-	font-family: "lavya bold";
+	font-weight: 700;
+	font-width: 150;
     font-size: 8vw;
 	color: rgba(240,83,78,1.00);
     padding-top: 150px;
@@ -84,10 +96,11 @@
     text-align: center;
 	margin: 0%;
 	line-height:1;
+	font-variation-settings: 'wght' 700, 'wdth' 150;
 }
 
 .subheadline {
-	font-family: "Lavya Light";
+	font-variation-settings: 'wght' 200, 'wdth' 60;
 	margin-bottom: 8%;
 	text-align: center;
 	word-spacing: 0.625vh;
@@ -187,6 +200,7 @@
 	padding-bottom: 10%;
 	padding-top: 10%;
 	margin-top: 10%;
+	font-variation-settings: 'wght' 700, 'wdth' 150;
 }
 
 .gallery {
