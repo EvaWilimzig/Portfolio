@@ -22,7 +22,7 @@
     align-items: center;
     padding: 1% 1%;
 	white-space: nowrap;
-	font-family: lavya light;
+	font-family: "Lavya light";
 }
 
 .logo img {
@@ -49,7 +49,7 @@
 }
 
 .title1 {
-	font-family: lavya bold;
+	font-family: "lavya bold";
     font-size: 8vw;
 	color: rgba(240,83,78,1.00);
     padding-top: 250px;
@@ -65,7 +65,7 @@
 }
 
 .title2 {
-	font-family: lavya bold;
+	font-family: "lavya bold";
     font-size: 8vw;
 	color: rgba(240,83,78,1.00);
     padding-top: 0%;
@@ -76,7 +76,7 @@
 }
 
 .title3 {
-	font-family: lavya bold;
+	font-family: "lavya bold";
     font-size: 8vw;
 	color: rgba(240,83,78,1.00);
     padding-top: 150px;
