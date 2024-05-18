@@ -42,7 +42,8 @@ header {
 	align-items: center;
 }
 .profileHeader h3 {
-	font-family: "lavya light";
+	font-family: "LavyaVF";
+	font-variation-settings: 'wght' 200, 'wdth' 60;
 	color: rgba(240,83,78,1.00);
 	font-size: 25px;
 	font-weight: 700;
@@ -71,10 +72,10 @@ hr {
 	display: block;
 }
 .section1 .sectionTitle, .section2 .sectionTitle {
-	font-family: lavya;
+	font-family: "LavyaVF";
+	font-variation-settings: 'wght' 700, 'wdth' 150;
 	color: rgba(240,83,78,1.00);
 	font-size: 30px;
-	font-weight: 700;
 	text-transform: uppercase;
 }
 .mainContent .section1 .section1Content {
