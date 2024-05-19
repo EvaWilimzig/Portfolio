@@ -369,6 +369,10 @@ a {
 	}
 	
   .instagram-link {
+	margin-top: 0%;
+	}
+	
+  .instagram-link a {
 	font-size: 12px;
 	}
 }
