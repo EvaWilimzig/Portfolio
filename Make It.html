@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shop</title>
+<title>MAKE IT!</title>
 <meta name="description" content="Discover the vibrant portfolio of Eva Wilimzig, a versatile design student specializing in illustration, font design, editorial and web design, as well as photography, videography, and branding. Explore her works and creative solutions.">
     <link rel="stylesheet" href="Eva Wilimzig Website.css" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -26,18 +26,38 @@
         <a href="Shop.html">Shop</a>
     </div>
 </div>
-<h1 class="title3" >Shop</h1>
+<h1 class="title3" >Make It!</h1>
 	
-<p class="subheadline" >One day, there will be a shop here. Until then, feel free to reach out to me on Instagram if you are interested in buying a print, book or else.</p>
+<p class="subheadline" >Short film</p>
 	
-	<div class="instagram">
-    <div class="instagram-content">
-        <img src="Images/Homepage/Instagram_icon.png" alt="Instagram" 
-			 width="30" height="30" >
-        <div class="instagram-link">
-        <a href="https://www.instagram.com/evaw.orking?igsh=MXEzdzllM3UxOTFmMQ%3D%3D&utm_source=qr">@evaw.orking</a> </div>
-    </div>
+<div class="Details"> 
+	<p>
+	 bla bla
+	</p>
+</div> 
+
+<!-- YouTube Video Embed -->
+<div class="Video">
+	<iframe width="90%" height="315" src="https://youtu.be/kdZrFf99o7U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+	
+<script>
+function anzeigenVorschau(bild) {
+    var modal = document.createElement('div');
+    modal.classList.add('modal');
+
+    var modalInhalt = document.createElement('img');
+    modalInhalt.src = bild.src;
+    modalInhalt.alt = bild.alt;
+
+    modal.appendChild(modalInhalt);
+    document.body.appendChild(modal);
+
+    modal.addEventListener('click', function() {
+        modal.remove();
+    });
+}
+</script>
 	
 <h1 class="title2"> </h1>
 	
