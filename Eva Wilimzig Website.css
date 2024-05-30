@@ -324,6 +324,18 @@ a {
 	text-decoration: none;
 }
 
+.video {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; 
+    margin-bottom: 1%;
+	width: 80vw;
+	height: 50vw;
+	max-width: 900px;
+	max-height: 500px;
+}
+
 .video video {
 	display: flex;
     justify-content: center;
