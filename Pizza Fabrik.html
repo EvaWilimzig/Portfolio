@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pizza Fabrik</title>
+<meta name="description" content="Discover the vibrant portfolio of Eva Wilimzig, a versatile design student specializing in illustration, font design, editorial and web design, as well as photography, videography, and branding. Explore her works and creative solutions.">
+    <link rel="stylesheet" href="Eva Wilimzig Website.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body
+  class="abschnitte">
+
+<div class="menu-bar">
+    <div class="logo">
+    <a href="index.html">
+        <img src="Images/Homepage/EW Logo.png" alt="Logo">
+    </a>
+    </div>
+    <div class="menu-items">
+        <a href="index.html">Home</a>
+        <a href="About me.html">About me</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Shop.html">Shop</a>
+    </div>
+</div>
+<h1 class="title3" >Pizza Fabrik</h1>
+	
+<p class="subheadline" >A redesign of the Pizza Fabrik Potsdam</p>
+
+<!-- Video Tag -->
+<div class="video">
+	<video controls>
+        <source src="Images/Pizza Fabrik/NUR MONTAGE.mp4" type="video/mp4">
+    </video>
+</div>
+	
+	<div class="Details"> 
+	<p>
+	 The Pizza Fabrik Potsdam is a pizza restaurant in Potsdam across from the FHP and in dire need of a redesign.
+	</p>
+</div> 
+	
+<script>
+function anzeigenVorschau(bild) {
+    var modal = document.createElement('div');
+    modal.classList.add('modal');
+
+    var modalInhalt = document.createElement('img');
+    modalInhalt.src = bild.src;
+    modalInhalt.alt = bild.alt;
+
+    modal.appendChild(modalInhalt);
+    document.body.appendChild(modal);
+
+    modal.addEventListener('click', function() {
+        modal.remove();
+    });
+}
+</script>
+	
+<h1 class="title2"> </h1>
+	
+</body>
+	
+<footer class="impressum">
+        <div class="container">
+            <div class="contact-info">
+                <p>Name: Eva Wilimzig | Email: emwilimzig@gmail.com | Instagram: @evaw.orking | <a href="copyright.html">&copy; 2024</a></p>
+            </div>
+        </div>
+    </footer>
+	
+</html>

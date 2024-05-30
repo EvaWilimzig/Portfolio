@@ -2,7 +2,6 @@
 /* CSS Document */
 
 
-/* Define the light font */
 @font-face {
     font-family: 'LavyaVF';
     src: url('Images//fonts/LavyaVF.woff2') format('woff2');
@@ -325,6 +324,18 @@ a {
 	text-decoration: none;
 }
 
+.video video {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; 
+    margin-bottom: 1%;
+	width: 80vw;
+	height: 50vw;
+	max-width: 900px;
+	max-height: 500px;
+}
+
 /* mobile screen rules */ 
 @media only screen and (min-width : 285px) and (max-width: 767px) {
   .Details, .headerimage {
@@ -375,4 +386,9 @@ a {
   .instagram-link a {
 	font-size: 12px;
 	}
+	
+	.video video {
+    width: 100%;
+	}
+	
 }
